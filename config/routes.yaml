@@ -1,3 +1,18 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+user:
+  path: /usuario
+  controller: App\Controller\UserController::index
+  methods: [POST]
+
+register:
+  path: /register
+  controller: App\Controller\UserController::create
+  methods: [POST]
+
+# RUTAS PARA CONTROLADOR: VIDEO #
+video:
+  path: /video
+  controller: App\Controller\VideoController::index
